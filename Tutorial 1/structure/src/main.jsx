@@ -15,6 +15,24 @@ function delayedFunction2() {
   );
 }
 
-setTimeout(delayedFunction, 2000);
+const myelement = (
+  <table>
+    <tr>
+      <th>Name</th>
+    </tr>
+    <tr>
+      <td>John</td>
+    </tr>
+    <tr>
+      <td>Elsa</td>
+    </tr>
+  </table>
+);
 
+function delayedFunction3() {
+  root.render(myelement);
+}
+
+setTimeout(delayedFunction, 2000);
 setTimeout(delayedFunction2, 4000);
+setTimeout(delayedFunction3, 8000);
